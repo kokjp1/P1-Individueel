@@ -1,8 +1,3 @@
-/* Background: #FFF2EB
-   Primary Brown: #776760
-   Secondary Teal: #295A58
-   Body-Text Brown: #5D514B */
-
 @font-face {
     font-family: 'ArialBlack';
     src: url('fonts/ariblk.ttf');
@@ -34,39 +29,42 @@ body {
 }
 
 header {
-    display:flex;
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 header nav ul {
     display: flex;
-    gap: 2em;
+    gap: 2.5em;
     list-style-type: none;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 header nav ul li {
-    font-size: 0.85em;
-}
-
-header nav ul li a {
-    position: relative;
-    text-decoration: none;
-    color: var(--body-text-brown);
+    font-size: .8em;
     font-family: var(--primary-font);
 }
 
-header nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    right: 50%;
-    height: 2px;
-    background: var(--body-text-brown);
-    transition: all 0.3s ease;
+header nav ul li a {
+    text-decoration: none;
+    color: var(--primary-brown);
 }
 
-header nav ul li a:hover::after {
-    left: 0;
-    right: 0;
+header nav ul li a.active {
+    border-bottom: 0.5em solid var(--secondary-teal);
+    padding-bottom: 2px; 
+}
+
+
+.horizontal-line {
+    border-top: 0.2em solid var(--primary-brown); /* Adjust to desired color and thickness */
+    width: 100%; /* Adjust to desired width */
+    margin-top: -0.75em; /* Adjust this value until the line is at the desired position */
 }
