@@ -1,0 +1,72 @@
+/* Background: #FFF2EB
+   Primary Brown: #776760
+   Secondary Teal: #295A58
+   Body-Text Brown: #5D514B */
+
+@font-face {
+    font-family: 'ArialBlack';
+    src: url('fonts/ariblk.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url('fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'ArialBold';
+    src: url('fonts/Arial Bold.ttf');
+}
+
+:root {
+    --background-color: #FFF2EB;
+    --primary-brown: #776760;
+    --secondary-teal: #295A58;
+    --body-text-brown: #5D514B;
+    --primary-font: 'ArialBlack', sans-serif;
+    --secondary-font: 'Poppins-regular', sans-serif;
+    --tertiary-font: 'ArialBold', sans-serif;
+}
+
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    display:flex;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+    justify-content: center;
+}
+
+header nav ul li {
+    font-size: 0.85em;
+}
+
+header nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--body-text-brown);
+    font-family: var(--primary-font);
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    background: var(--body-text-brown);
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover::after {
+    left: 0;
+    right: 0;
+}
