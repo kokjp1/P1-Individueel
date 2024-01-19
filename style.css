@@ -23,8 +23,12 @@
     --tertiary-font: 'ArialBold', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
+    margin:0;
     background-color: var(--background-color);
 }
 
@@ -60,10 +64,10 @@ header nav ul li a {
 header nav ul li a.active {
     border-bottom: 0.5em solid var(--secondary-teal);
     padding-bottom: 2px; 
-    animation: linkunderlineanimation 1s ease-in-out;   
+    animation: linkanimation 1s ease-in-out;
 }
 
-@keyframes linkunderlineanimation {
+@keyframes linkanimation {
     50% {opacity: 0;}
 }
 
@@ -71,4 +75,31 @@ header nav ul li a.active {
     border-top: 0.2em solid var(--primary-brown); /* Adjust to desired color and thickness */
     width: 100%; /* Adjust to desired width */
     margin-top: -0.75em; /* Adjust this value until the line is at the desired position */
+}
+
+footer {
+    background-color: var(--secondary-teal);
+    font-family: var(--primary-font);
+    color: var(--background-color);
+    padding:3em;
+    font-size: .25em;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+}
+
+.footerpart {
+    text-align: end;
+    display: flex;
+}
+
+.instagramlogo {
+    width: 10em;
+}
+
+.footerlogo {
+    justify-content: center;
+    width: 25%;
 }
