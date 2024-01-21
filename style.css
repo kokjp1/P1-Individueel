@@ -39,8 +39,8 @@ header {
 
 header img {
     width: 35%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 6.5em;
+    margin-top: 1em;
     display: block;
 }
 
@@ -77,6 +77,71 @@ header nav ul li a.active {
     margin-top: -0.75em; /* Adjust this value until the line is at the desired position */
 }
 
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:.75em 1.75em 1.75em 1.75em;
+}
+
+main section h1 {
+    font-family: var(--primary-font);
+    color: var(--secondary-teal);
+    font-size: 1.5em;
+    margin:0.5em;
+
+}
+
+main section h2 {
+    font-family: var(--primary-font);
+    color: var(--secondary-teal);
+    font-size: 1em;
+    margin:0.5em;
+
+}
+
+
+main section .kledingrek{
+    height:10em;
+    width:17.5em;
+    object-fit:cover;
+}
+
+main section p {
+    color: var(--body-text-brown);
+    font-family: var(--secondary-font);
+    font-size: .75em;    
+    margin:1.5em;
+}
+
+.colored-square {
+    margin: 2em 2em 2.5em 2em;
+    width: 100%; 
+    height: 7.5em; 
+    background-color: var(--secondary-teal);
+    font-size: .85em;
+    font-family: var(--tertiary-font); 
+    color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main section .ruilhoeklogo {
+    width:17.5em;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: .5em;
+}
+
+.gridelement {
+    width:9em;
+}
+
 footer {
     background-color: var(--secondary-teal);
     font-family: var(--primary-font);
@@ -89,6 +154,7 @@ footer {
     align-items: center;
     text-align: start;
 }
+
 
 .footerpart {
     text-align: end;
