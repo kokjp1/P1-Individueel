@@ -39,7 +39,7 @@ header {
 
 header img {
     width: 35%;
-    margin-left: 6.5em;
+    margin-left:6.5em;
     margin-top: 1em;
     display: block;
 }
@@ -84,12 +84,22 @@ main section {
     margin:.75em 1.75em 1.75em 1.75em;
 }
 
+main section a {
+    color: var(--secondary-teal);
+}
+
 main section h1 {
     font-family: var(--primary-font);
     color: var(--secondary-teal);
     font-size: 1.5em;
     margin:0.5em;
+    text-align: center;
+}
 
+#deruilhoek {
+    opacity: 0;
+    padding:0;
+    margin: 0;
 }
 
 main section h2 {
