@@ -44,6 +44,14 @@ header img {
     display: block;
 }
 
+header p {
+    font-family: var(--primary-font);
+    color: var(--secondary-teal);
+    font-size: .75em;
+    margin:0;
+    text-align: center;
+}
+
 header nav ul {
     display: flex;
     gap: 2.5em;
