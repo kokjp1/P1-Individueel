@@ -23,6 +23,15 @@
     --tertiary-font: 'ArialBold', sans-serif;
 }
 
+.titel {
+    font-family: var(--primary-font);
+    color: var(--secondary-teal);
+    font-size: 1em;
+    margin:0;
+    text-align: center;
+
+}
+
 html {
     scroll-behavior: smooth;
 }
